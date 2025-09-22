@@ -10,11 +10,9 @@ This repository contains various exercises, examples, and projects related to on
 
 ```
 Ontology_pratice/
-├── examples/          # Example ontology files
-├── exercises/         # Practice exercises and solutions
-├── projects/         # Mini-projects implementing ontologies
-├── docs/            # Documentation and references
-└── README.md        # This file
+├── Cora_Validating_owl_file.owx
+├── Food_service.owx
+└── README.md # This file
 ```
 
 ## Technologies Used
