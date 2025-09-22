@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2025/8/untitled-ontology-33"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2025/8/untitled-ontology-33">
+    <Prefix name="" IRI="http://www.semanticweb.org/lenovo/ontologies/2025/8/untitled-ontology-33/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Corridor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Door"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Package"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assignedTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConnectedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Corridor_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deliver_package_to_person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Door_person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#First_robo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Office_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Office_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reception_area"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Some_package"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Corridor"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Door"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Office"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Package"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reception"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robot"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Corridor"/>
+        <NamedIndividual IRI="#Corridor_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Task"/>
+        <NamedIndividual IRI="#Deliver_package_to_person"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Door"/>
+        <NamedIndividual IRI="#Door_person"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robot"/>
+        <NamedIndividual IRI="#First_robo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#Office_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#Office_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Person"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reception"/>
+        <NamedIndividual IRI="#Reception_area"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Package"/>
+        <NamedIndividual IRI="#Some_package"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Corridor_1"/>
+        <NamedIndividual IRI="#Office_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Corridor_1"/>
+        <NamedIndividual IRI="#Office_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assignedTask"/>
+        <NamedIndividual IRI="#First_robo"/>
+        <NamedIndividual IRI="#Deliver_package_to_person"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#First_robo"/>
+        <NamedIndividual IRI="#Reception_area"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#Person"/>
+        <NamedIndividual IRI="#Office_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#Reception_area"/>
+        <NamedIndividual IRI="#Corridor_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAt"/>
+        <NamedIndividual IRI="#Some_package"/>
+        <NamedIndividual IRI="#Reception_area"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStatus"/>
+        <NamedIndividual IRI="#Door_person"/>
+        <Literal>&quot;Closed&quot;</Literal>
+    </DataPropertyAssertion>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isIn"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assignedTask"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#assignedTask"/>
+            <Class IRI="#Robot"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasObject"/>
+            <Class IRI="#Agent"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAt"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Object"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIn"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isIn"/>
+            <Class IRI="#Agent"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIn"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isIn"/>
+            <Class IRI="#Object"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assignedTask"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#assignedTask"/>
+            <Class IRI="#Task"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasObject"/>
+            <Class IRI="#Object"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAt"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIn"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isIn"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStatus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStatus"/>
+            <Class IRI="#Door"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
