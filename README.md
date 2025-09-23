@@ -4,13 +4,15 @@ A repository dedicated to practicing and experimenting with ontology concepts, i
 
 ## Overview
 
-This repository contains various exercises, examples, and projects related to ontology development and semantic web technologies. It serves as a learning resource and practice ground for working with ontologies.
+This repository contains ontology files and projects related to ontology development and semantic web technologies. It serves as a learning resource and practice ground for exploring ontology concepts.
 
 ## Repository Structure
 
+
 ```
 Ontology_pratice/
-├── Cora_Validating_owl_file.owx
+├── Prototyping and validating the CORA ontology: case study on a simulated reconnaissance mission/
+│ └── Cora_Validating_owl_file.owx
 ├── Food_service.owx
 └── README.md # This file
 ```
