@@ -91,6 +91,8 @@ This project is open source and available under the [MIT License](LICENSE).
 - GitHub: [NiramaiPNayanar](https://github.com/NiramaiPNayanar)
 - Repository: https://github.com/NiramaiPNayanar/Ontology_pratice
 
+#Note :
+- To use OWLViz on Windows 11 with Protege 5.6.5 only use Graphviz version 12.0.0. What you have to do is map the dot file of the Grpahviz to protege then only can you use OWLViz
 ---
 
 *Note: This is a practice repository for learning ontology concepts and implementations.*
